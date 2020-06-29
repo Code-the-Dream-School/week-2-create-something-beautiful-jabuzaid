@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    background-color: #b0bab8;
+    height: 5em;
+    display: flex;
+    width: 100%;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    width: 70%;
+    list-style: none;
+    flex-wrap: nowrap;
+    margin: 5px;
+    padding: 3px;
+    align-self: flex-start;
+}
+
+.nav-links li {
+    display: inline-block;
+    background-color: gray;
+    font-size: 2.0em;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+ul li,
+a {
+    font-size: 20px;
+    color: #edf0f1;
+    padding-bottom: 20px;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.nav-links li a {
+    transition: alt 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+.nav-image {
+    width: 30%;
+    align-self: flex-end;
+    margin-top: 1em;
+}
+
+.nav-image li {
+    display: inline-block;
+    background-color: gray;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+#nav-bar-image {
+    width: 75px;
+    height: 42px;
+    border: solid 2px black;
+    border-radius: 50%;
+    align-self: flex-end;
+}
+
+
+#with-flex-box {
+    color: grey;
+    font-size: 20px;
+}
+
+/* Cover page images */
+
+
+.cover-page {
+    padding-top: 20%;
+    padding-bottom: 5%;
+    height: 700px;
+    background: url("https://placeimg.com/640/480/tech") center center/cover no-repeat;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border: solid 2px black;
+    border-radius: 50%;
+    margin: 8px 20px 8px 5px;
+}
+
+.cover-image {
+    border-radius: 50%;
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("https://placeimg.com/640/480/tech") center center/cover no-repeat;
+}
+
+.main-title {
+    text-transform: uppercase;
+    color: red;
+    font-family: sans-serif;
+    padding-top: 0.9em;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Linear Search and Linked List paragraphs */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2.5em;
+    flex-wrap: wrap;
+}
+
+/* Linear Search paragraph */
+.con-linear-search {
+    width: 70%;
+    display: flex;
+    background-color: honeydew;
+    margin-top: 1em;
+    align-self: flex-start;
+    border: solid black 2px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .8);
+}
+
+.linear-search-image {
+    width: 35%;
+    padding: 2%;
+    align-self: flex-start;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .8);
+}
+
+.linear-t-p {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.linear-text {
+    padding-left: 3em;
+}
+
+.linear-p {
+    border: 5px solid black;
+    padding: 1em;
+    font-weight: bold;
+    background-color: #52bab3;
+    height: 65%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .8);
+    align-self: flex-end;
+    text-align: justify;
+}
+
+.con-linked-list {
+    width: 70%;
+    display: flex;
+    background-color: honeydew;
+    margin-top: 2.5em;
+    align-self: flex-end;
+    border: solid black 2px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .8);
+}
+
+.linked-list-image {
+    width: 35%;
+    padding: 2%;
+    align-self: self-end;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .8);
+}
+
+.linked-t-p {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.65em 0;
+}
+
+.linked-text {
+    padding-left: 3em;
+    flex-wrap: wrap;
+}
+
+.linked-p {
+    border: 5px solid black;
+    padding: 1em;
+    font-weight: bold;
+    background-color: #56cbc7;
+    height: 65%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .8);
+    align-self: self-end;
+    text-align: justify;
+}
+
+/* Tabe container: 3 columns section */
+.table {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5em;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    flex: 1;
+    margin-bottom: auto;
+}
+
+.col h1 {
+    text-align: center;
+}
+
+.col img {
+    margin: auto;
+    width: 90%;
+    padding: 1%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .8);
+}
+
+.col p {
+    line-height: 1.4;
+    width: 90%;
+    height: 360px;
+    padding: 1%;
+    margin: auto;
+    background-color: #384047;
+    color: white;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .8);
+    text-align: justify;
+}
+
+/* Linear search container */
+.lin {
+    display: flex;
+    flex-flow: column;
+    padding: 1em;
+    margin-top: 2.5em;
+    margin-bottom: auto;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.lin p {
+    border: 5px solid black;
+    background-color: tomato;
+    flex: auto;
+    margin-top: 2px;
+    text-align: justify;
+    padding: 5px;
+}
+
+.lin-image {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .8);
+    text-align: justify;
+    margin: auto;
+    width: 75%;
+    height: 50%;
+}
+
+/* Media Links */
+.media-links {
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Google */
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+/* Linkedin */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+/* YouTube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+footer {
+    margin-top: 1em;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background: gray;
+    padding: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+    .col {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* @media (max-width: 960px) {
+    body {
+        background: royalblue;
+    }
+
+
+}
+
+@media (max-value: 480px) {
+    body {
+        background: darkred;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+    body {
+        background: seagreen;
+    }
+
+    p {
+        color: white;
+    }
+} */
